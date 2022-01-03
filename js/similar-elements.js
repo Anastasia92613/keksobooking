@@ -32,7 +32,7 @@ const addAvatr = (element, tag) => {
   similarAuthor.forEach(({avatar})=> {
     element.querySelector(`.${tag}`).src = avatar;
   })
-}
+};
 
 
 
