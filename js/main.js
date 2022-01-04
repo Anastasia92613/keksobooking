@@ -1,2 +1,8 @@
-import './similar-elements.js';
-import './form.js';
+import { fillingOfferContent } from './similar-elements.js';
+import { priceTypeHouse, chekInCheckOutTime } from './form.js';
+
+window.onload = () => {
+  fillingOfferContent ();
+  priceTypeHouse ();
+  chekInCheckOutTime ();
+}

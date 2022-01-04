@@ -1,3 +1,4 @@
+// import _ from 'lodash';
 import { getRandomInt, getRandomFloat, getArrayUniq, getRandomArrayElement } from './util.js';
 
 const TYPE = ['flat', 'palace', 'palace', 'flat', 'house', 'bungalow'];
@@ -36,6 +37,7 @@ const createLocation = () => {
     y: getRandomFloat(139.70000, 139.80000, 5),
   };
 };
+
 
 const similarAuthor = new Array(10).fill(null).map(()=> createAuthor());
 const similarOffer = new Array(10).fill(null).map(()=> createOffer());
