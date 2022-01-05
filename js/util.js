@@ -45,4 +45,19 @@ const getRandomArrayElement = (elements) => {
   return elements[_.random(0, elements.length - 1)];
 };
 
-export { getRandomInt, getRandomFloat, getArrayUniq, getRandomArrayElement }
+const formDisabled = (form, collection) => {
+  form.classList.add('ad-form--disabled');
+  for(let el of collection) {
+    el.setAttribute('disabled', 'disabled');
+  }
+};
+
+const formActive = (form, collection) => {
+  form.classList.remove('ad-form--disabled');
+  for(let el of collection) {
+    el.removeAttribute('disabled', 'disabled');
+  }
+}
+
+
+export { getRandomInt, getRandomFloat, getArrayUniq, getRandomArrayElement, formDisabled, formActive }
